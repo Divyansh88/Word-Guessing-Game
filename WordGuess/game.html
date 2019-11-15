@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module game</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>game</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cadmin%5Cpycharmprojects%5Cassignment%201%5Cgame.py">c:\users\admin\pycharmprojects\assignment 1\game.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="game.html#game">game</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="game">class <strong>game</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>This&nbsp;class&nbsp;maintains&nbsp;information&nbsp;and&nbsp;do&nbsp;different&nbsp;operations.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="game-guessLetter"><strong>guessLetter</strong></a>(self, current_word, current_guess)</dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;uncovers&nbsp;the&nbsp;guessed&nbsp;letters.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.<br>
+:param&nbsp;current_guess:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;word&nbsp;with&nbsp;uncovered&nbsp;letters&nbsp;and&nbsp;covered&nbsp;letters.<br>
+:return:&nbsp;It&nbsp;will&nbsp;return&nbsp;string&nbsp;with&nbsp;uncovered&nbsp;letters.</tt></dd></dl>
+
+<dl><dt><a name="game-guessWord"><strong>guessWord</strong></a>(self, current_word, current_guess)</dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;ask&nbsp;word&nbsp;to&nbsp;guess&nbsp;and&nbsp;checks&nbsp;it&nbsp;matches&nbsp;with&nbsp;the&nbsp;actual&nbsp;word&nbsp;or&nbsp;not.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.<br>
+:param&nbsp;current_guess:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;word&nbsp;with&nbsp;uncovered&nbsp;letters&nbsp;and&nbsp;covered&nbsp;letters.<br>
+:return:&nbsp;It&nbsp;return&nbsp;True&nbsp;if&nbsp;strings&nbsp;matches&nbsp;and&nbsp;false&nbsp;if&nbsp;not.</tt></dd></dl>
+
+<dl><dt><a name="game-tellAnswer"><strong>tellAnswer</strong></a>(self, current_word, current_guess)</dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;return&nbsp;actual&nbsp;word&nbsp;if&nbsp;user&nbsp;is&nbsp;tired&nbsp;of&nbsp;guessing.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.<br>
+:param&nbsp;current_guess:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;word&nbsp;with&nbsp;uncovered&nbsp;letters&nbsp;and&nbsp;covered&nbsp;letters.<br>
+:return:&nbsp;It&nbsp;will&nbsp;return&nbsp;the&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="game-addList"><strong>addList</strong></a>(current_word)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;store&nbsp;information&nbsp;after&nbsp;each&nbsp;round.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.</tt></dd></dl>
+
+<dl><dt><a name="game-countBadGuesses"><strong>countBadGuesses</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;count&nbsp;number&nbsp;of&nbsp;bad&nbsp;guesses&nbsp;to&nbsp;count&nbsp;score.</tt></dd></dl>
+
+<dl><dt><a name="game-countLetterRequest"><strong>countLetterRequest</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;count&nbsp;number&nbsp;of&nbsp;letters&nbsp;requested&nbsp;to&nbsp;count&nbsp;score.</tt></dd></dl>
+
+<dl><dt><a name="game-countMissedLetters"><strong>countMissedLetters</strong></a>(current_word, current_guess)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;count&nbsp;missed&nbsp;letters&nbsp;from&nbsp;a&nbsp;word&nbsp;for&nbsp;display&nbsp;purpose.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.<br>
+:param&nbsp;current_guess:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;word&nbsp;with&nbsp;uncovered&nbsp;letters&nbsp;and&nbsp;covered&nbsp;letters.</tt></dd></dl>
+
+<dl><dt><a name="game-countScore"><strong>countScore</strong></a>(current_word, current_guess)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;count&nbsp;score&nbsp;for&nbsp;the&nbsp;user&nbsp;from&nbsp;uncovered&nbsp;letters.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.<br>
+:param&nbsp;current_guess:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;word&nbsp;with&nbsp;uncovered&nbsp;letters&nbsp;and&nbsp;covered&nbsp;letters.</tt></dd></dl>
+
+<dl><dt><a name="game-countScoreMinus"><strong>countScoreMinus</strong></a>(current_word)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;count&nbsp;score&nbsp;in&nbsp;case&nbsp;of&nbsp;user&nbsp;gives&nbsp;up.<br>
+:param&nbsp;current_word:&nbsp;It&nbsp;is&nbsp;string&nbsp;containing&nbsp;actual&nbsp;word.</tt></dd></dl>
+
+<dl><dt><a name="game-printScore"><strong>printScore</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;print&nbsp;the&nbsp;score&nbsp;when&nbsp;user&nbsp;quit&nbsp;the&nbsp;<a href="#game">game</a>.</tt></dd></dl>
+
+<dl><dt><a name="game-resetAll"><strong>resetAll</strong></a>()<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;reset&nbsp;all&nbsp;variables.</tt></dd></dl>
+
+<dl><dt><a name="game-statusAssign"><strong>statusAssign</strong></a>(status_given)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;will&nbsp;assign&nbsp;status&nbsp;to&nbsp;display&nbsp;it&nbsp;in&nbsp;the&nbsp;end.<br>
+:param&nbsp;status_given:&nbsp;It&nbsp;contains&nbsp;string&nbsp;success&nbsp;or&nbsp;give&nbsp;up.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>bad_guesses</strong> = 0</dl>
+
+<dl><dt><strong>data</strong> = [['Game', 'Word', 'Status', 'Bad Guesses', 'Missed Letters', 'Score']]</dl>
+
+<dl><dt><strong>dict</strong> = {'a': 8.17, 'b': 1.49, 'c': 2.78, 'd': 4.25, 'e': 12.7, 'f': 2.23, 'g': 2.02, 'h': 6.09, 'i': 6.97, 'j': 0.15, ...}</dl>
+
+<dl><dt><strong>game_number</strong> = 0</dl>
+
+<dl><dt><strong>letter_request</strong> = 0</dl>
+
+<dl><dt><strong>missed_letters</strong> = 0</dl>
+
+<dl><dt><strong>score</strong> = 0</dl>
+
+<dl><dt><strong>status</strong> = ''</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
